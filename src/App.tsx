@@ -41,8 +41,8 @@ const validateVisa = (number) => {
 // --- Custom Slider Component (Replaces react-responsive-carousel) ---
 const CustomSlider = () => {
   const slides = [
-    "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?w=800",
-    "https://images.unsplash.com/photo-1603356033288-acfcb54801e6?w=800"
+    "../public/img/landing_pic.png",
+    "../public/img/landing_pic2.png"
   ];
   const [current, setCurrent] = useState(0);
 
