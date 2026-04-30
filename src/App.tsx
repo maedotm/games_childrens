@@ -41,8 +41,8 @@ const validateVisa = (number) => {
 // --- Custom Slider Component (Replaces react-responsive-carousel) ---
 const CustomSlider = () => {
   const slides = [
-    "../public/img/landing_pic.png",
-    "../public/img/landing_pic2.png"
+    "../img/landing_pic.png",
+    "../img/landing_pic2.png"
   ];
   const [current, setCurrent] = useState(0);
 
@@ -106,7 +106,7 @@ function VisaPaymentView({ total, onBack, onComplete }) {
       if (validateVisa(cardNumber)) {
         onComplete();
       } else {
-        setError("Invalid Visa Card. Ensure it starts with '4', has 16 digits, and is a valid card number.");
+        setError("Invalid Visa Card.and is a valid card number.");
       }
       setLoading(false);
     }, 1500);
